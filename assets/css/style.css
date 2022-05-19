@@ -232,7 +232,7 @@ margin-top: 50px;
         footer nav ul li a {
             padding: 10px 15px;
             font-weight: lighter;
-            font-size: 40px;
+            font-size: 1.55vw;
           }
     
           footer nav ul li a:hover {
@@ -242,7 +242,43 @@ margin-top: 50px;
             text-shadow: none;
           }
 
-
+          @media screen and (max-width: 980px) {
+            header {
+              padding-bottom: 0;
+              justify-content: center;
+              position: relative;
+            }
+          
+            header h1 {
+              width: 100%;
+              text-align: center;
+            }
+          
+            header nav ul {
+              margin-top: 20px;
+              width: 100%;
+              justify-content: center;
+            }
+          
+            header nav ul li a {
+              font-size: 20px;
+            }
+            header nav ul li a:hover {
+              background: #fce138;
+              color: #024e76;
+              border-radius: 15px;
+              text-shadow: none;
+            }
+            
+          
+            footer, footer div {
+              text-align: center;
+              width: 40%;
+            }
+          
+            
+        
+        }
           
           
          
