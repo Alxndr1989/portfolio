@@ -1,6 +1,6 @@
 body {
     /* more on this crazy alphanumerical value in a minute! */
-    color:olive;
+    color:rgb(136, 136, 4);
     font-family: brush script mt, sans-serif;
     background-image: url(../images/b-g1.jpeg);
     font-size: 30px;
@@ -77,16 +77,33 @@ header nav li {
     * {
         box-sizing: border-box;
     }
+
+ .first .flex-row {
+border-right: #024e76 3px solid;
+
+margin-top: 50px;
+
+
+}
+
+
+
     .first .flex-row { 
   
     flex-flow: wrap;
     flex: 1 1 100;
     text-align: left;
-    display: inline-block;
-    width:30%;
+    display: flex;
+    width:20%;
+    padding-left: 25px;
  
     }
    
+    .flex-row h1 {
+        color: rgb(184, 126, 18);
+        padding: 30px 10px 0 0;
+       
+    }
     .first .text {
       
         position: relative;
@@ -94,26 +111,38 @@ header nav li {
         margin-left: 10em;
     margin-right: 2em;
     justify-content: space-between;
+    }
 
-
+    .cool-subtitle h2 {
+        padding-left: 40px;
+        color:#024e76;
+    }
+.cool-subtitle h3 {
+    color:#0b2b01;
+    text-shadow: #fce138;
+    padding-left: 5%;
   
     }
 
      /*flexbox*/
     .text .flex-container {
         display: flex;
-      align-content: space-around;
+  
         flex-wrap: wrap;
         justify-content: space-between;
         align-items: center;
      flex-direction: row;
-     padding-top: 30px;
-     height: 800px;
+     padding-top: 10px;
+     height: 900px;
         flex-shrink: 1;
         flex-grow: 1;
 
     }
-/*footer*/
+
+
+.text p {
+    color: #3db818;
+}
 
  .div1 {
     width: 700px;
@@ -146,7 +175,7 @@ header nav li {
     flex-shrink: 1;
         flex-grow: 1;
   }
-  .first .text .flex-container .div4 {
+   .div4 {
     width: 300px;
     height: 200px;
     border-radius: 15px 30px;
@@ -156,7 +185,7 @@ header nav li {
     flex-shrink: 1;
         flex-grow: 1;
   }
-  .first .text .flex-container .div5 {
+   .div5 {
     width: 300px;
     height: 200px;
     border-radius: 15px 30px;
@@ -203,7 +232,7 @@ header nav li {
         footer nav ul li a {
             padding: 10px 15px;
             font-weight: lighter;
-            font-size: 1.55vw;
+            font-size: 40px;
           }
     
           footer nav ul li a:hover {
@@ -215,33 +244,5 @@ header nav li {
 
 
           
-          @media screen and (max-width: 768px) {
           
-            .first .flex-row {
-              padding: 30px 15px;
-            }
-          
-            .flex-row h1 {
-              flex: 1 100%;
-              text-align: center;
-            }
-          
-            .text {
-              flex: 1 100%;
-              text-align: center;
-              justify-content: center;
-            }
-          
-            .flex-container {
-              flex: 0 32%;
-              margin-right: 0;
-              margin-top: 15px;
-              margin-bottom: 15px;
-            }
-          
-            .div1 .div2 .div3 .div4 .div5 {
-              flex: 30%;  
-            }
-          
-          }
          
