@@ -270,15 +270,72 @@ margin-top: 50px;
               text-shadow: none;
             }
             
-          
-            footer, footer div {
-              text-align: center;
-              width: 40%;
-            }
-          
+            footer {
+                padding-bottom: 0;
+                justify-content: center;
+                position: relative;
+                width: 100%;
+                text-align: center;
+              }
             
-        
+              .first {
+                  text-align: center;
+                  width: 100%;
+                  padding: 0;
+                  
+              }
+              .first .flex-row
+              {
+                  text-align: center;
+                  width: 100%;
+              }
+              .first .text {
+                  text-align: center;
+                  width: 100%;
+                  margin: 0;
+              }
+            
+              footer nav ul {
+                margin-top: 20px;
+                width: 100%;
+                justify-content: center;
+              }
+            
+              footer nav ul li a {
+                font-size: 20px;
+              }
+              footer nav ul li a:hover {
+                background: #fce138;
+                color: #024e76;
+                border-radius: 15px;
+                text-shadow: none;
+              }
         }
           
+        @media screen and (max-width: 768px) {
+            section {
+              padding: 30px 15px;
+            }
+          }
+          @media screen and (max-width: 575px) {
+              footer {
+                  position: absolute;
+                  bottom: 0;
+                  width: 100%;
+              }
+
+            footer nav ul {
+                margin-top: auto;
+                width: 100%;
+                justify-content: center;
+                
+        
+              }
+            
+
+              
           
+          
+            
+          }
          
